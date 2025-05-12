@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  nginx:
+    depends_on:
+      - frontend
+      - postgres_server
+    
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./nginx_dev
+    ports:
+      - "3051:80"
+    hostname: nginx
+
+  frontend:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./frontend
+    volumes:
+      - ./frontend/node_modules:/app/node_modules
+      - ./frontend:/app
+    environment:
+      - REACT_APP_HTTP_TYP=http
+      - REACT_APP_HTTP_CONDN=false
+      - REACT_APP_HOST_NAME_3005=123tute.com:3005
+    ports:
+      - "3006:3006"
+    networks:
+      - mynetwork
+    hostname: ats6
+  
+  postgres_server:
+    build:
+      dockerfile: Dockerfile.dev
+      context: "./backend/postgres_server"
+    volumes:
+      - /app/node_modules
+      - ./backend/postgres_server:/app
+      - postgresLog:/postgresLog
+    environment:
+      - PGUSER=postgres
+      - PGHOST=postdbcon.123legal.in
+      - PGDATABASE=attendance
+      - PGPASSWORD=SWRlZWxpdEAyMDI0
+      - PGPORT=5434
+    ports:
+      - "3005:3005"
+    networks:
+      - mynetwork
+    hostname: ats5
+ 
+ 
+   
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  postgresLog:
+

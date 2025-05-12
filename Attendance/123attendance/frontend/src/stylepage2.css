@@ -1,0 +1,250 @@
+/* Working.css */
+
+.working-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid gray;
+  }
+  
+  .working-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  input[type="time" i] {
+    font-family: monospace;
+    padding-inline-start: 1px;
+    cursor: default;
+    align-items: center;
+    display: inline-flex;
+    overflow: hidden;
+    padding: 4px;
+}
+  
+  .calendar-container {
+    margin-bottom: 20px;
+  }
+  
+  .calendar-container1 {
+    margin-bottom: 20px;
+  }
+  
+  
+  .buttons {
+    background-color: #050505;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  
+  .working-description-box {
+    margin-bottom: 20px;
+  }
+  
+  .description-sentence {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .descriptio-box {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  /* PermissionPage.css */
+  
+  .permission-container {
+    max-width: 450px;
+      margin: 0 auto;
+      padding: 30px;
+      border: 1px solid gray;
+  }
+  
+  .permission-container h1 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+  }
+.textarea{
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+  
+  .period-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .button-morning, .button-afternoon {
+    background-color: #0d0d0e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  /* PrivilegeLeaveForm.css */
+  
+  .privilege-container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: -6px 6px 75px #c9c9c9, 16px -16px 25px #ffffff;
+  }
+  
+
+
+  .privilege-container h1 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+  }
+  
+  .textarea-privilege-container {
+    margin-bottom: 20px;
+  }
+  
+  .textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid #ccc;
+    border-radius: 4px; */
+    resize: vertical;
+  }
+  
+
+  .button-privilege-container button {
+    background-color: #080808;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+  }
+  .button-privilege-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* SickLeaveForm.css */
+  
+  .sick-container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid gray;
+  }
+  
+  .sick-container h1 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+  }
+  
+  .description4-container {
+    margin-bottom: 20px;
+  }
+  
+  .description4-sentence {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .sick-button {
+    background-color: #050505;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  
+
+.react-calendar__navigation button {
+  min-width: 50px !important;
+  background: none !important;
+  color: black !important;
+  background-color: gray !important;
+  margin: 3px !important;
+}
+
+.privilegeinput label{
+  margin-right: 20px;
+
+}
+.privilegeinput .date{
+  margin-right: 38px;
+
+}
+.privilegeinput input[type="text" ] {
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 20%;
+}
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+.react-calendar, .react-calendar *, .react-calendar *:before, .react-calendar *:after {
+  box-sizing: border-box;
+  color: black !important;
+}
+
+.privilegetextarea textarea {
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 75%;
+  height: 70px;
+  margin-top: 10px;
+}
+.privilegetextarea{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.permissiondate label{
+  margin-right: 20px;
+}
+.permissiondate1 label{
+  margin-right: 25px;
+}

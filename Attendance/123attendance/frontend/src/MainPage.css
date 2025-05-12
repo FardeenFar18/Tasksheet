@@ -1,0 +1,54 @@
+.main-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  /* border: 1px solid gray; */
+  margin-top: 20%;
+  box-shadow: -6px 6px 75px #c9c9c9, 16px -16px 25px #ffffff;
+  border-radius: 30px;
+}
+
+
+.main-heading {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: black; /* Set button background color to black */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-button:hover {
+  background-color: #333; /* Darken button background color on hover */
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 10%;
+}
+a{
+  text-decoration: none;
+}

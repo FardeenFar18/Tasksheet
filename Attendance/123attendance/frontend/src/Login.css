@@ -1,0 +1,65 @@
+/* App.css */
+
+.login-container {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 10%;
+  border-radius: 39px;
+background: linear-gradient(225deg, #e6e6e6, #ffffff);
+box-shadow:  -16px 16px 25px #c9c9c9,
+         16px -16px 25px #ffffff;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login-container input[type="text"] {
+    width: 85%;
+    padding: 9px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    padding: 10px 20px;
+    background-color: #080808;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  .login-container button:hover {
+    background-color: #707479;
+  }
+  
+  .login-container p {
+    margin-top: 10px;
+  }
+  
+  /* Optional: Style for OTP input */
+  .login-container input[type="text"][placeholder="Enter OTP"] {
+    margin-right: 10px;
+    width: calc(100% - 100px);
+  }
+  
+  /* Optional: Style for time left */
+  .login-container p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  

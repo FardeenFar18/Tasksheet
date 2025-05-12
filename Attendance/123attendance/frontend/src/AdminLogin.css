@@ -1,0 +1,91 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Ensure the container covers the full viewport height */
+  /* margin: 0;
+} */ */
+
+.Admin-container {
+ 
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 3px solid rgb(10, 10, 10);
+  margin-top: 500%;
+  text-align: center;
+}
+
+
+/* Rest of your CSS remains the same */
+
+h2 {
+  font-size: 20px;
+}
+
+.Admin-label {
+  display: contents;
+  margin-bottom: 5px;
+}
+.Admin-label1 {
+  display: contents;
+  margin-bottom: 5px;
+}
+
+
+input[type="email"],
+input[type="password"] {
+  width: 220px; /* Input takes full width */
+  height: 40px; /* Adjust the height as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #0c0c0c;
+}
+
+.login-button1 {
+  /* width: 220px; Button takes full width */
+  height: 40px; /* Adjust the height as needed */
+  background-color: #0c0c0c;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-left: 9%;
+}
+
+.login-button1:hover {
+  background-color: #746e6e;
+}
+
+.error-message {
+  color: red;
+}
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  width: 220px;
+  height: 40px;
+  padding: 10px 40px 10px 10px; /* Adjust the padding to make space for the eye icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 43%; /* Adjust the positioning as needed */
+  /* transform: translateY(-50%); */
+  cursor: pointer;
+  bottom: 50%;
+}

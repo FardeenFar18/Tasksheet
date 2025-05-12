@@ -1,0 +1,94 @@
+/* privilegeLeaveForm.css */
+
+.privilege-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid gray;
+  margin-top: 10%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+   */
+  .input-privilege-container {
+    position: relative;
+  }
+  
+  .input-privilege-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .calendar-privilege-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .textarea-privilege-container textarea {
+    
+      width: 310px !important;
+      height: 100px !important;
+      padding: 5px !important;
+      border: 1px solid #ccc !important;
+      border-radius: 5px !important;
+      resize: vertical;
+  }
+  
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .button-privilege-container {
+    text-align: center;
+  }
+  
+  .button-privilege-container button {
+    padding: 10px 20px;
+    background-color: #111111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 200px;
+    margin-left: 30%;
+  }
+  
+  .button-privilege-container button:hover {
+    background-color: #6d7072;
+  }
+  
+  .privilege-container .description2-container {
+    margin-top: 20px;
+  }
+  
+  .privilege-container .description2-container label {
+    display: block;
+  }
+  
+  .privilege-container .description2-container textarea {
+    width: 100%;
+    height: 50px;
+    margin-left: 3px;
+  }
