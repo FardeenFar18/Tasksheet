@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .working-container{
+    
+      max-width: 450px;
+      margin: 0 auto;
+      padding: 30px;
+      border: 1px solid gray;
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Label styles */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Input styles */
+  input[type="time"]
+  {
+    width: 350px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+  }
+  textarea {
+    width: 340px !important;
+    height: 100px !important;
+    padding: 5px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    resize: vertical;
+}
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10%;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    margin-right: 10%;
+  }
+  
+  /* Calendar styles */
+  .react-calendar {
+    max-width: 100% !important;
+    background: #fff;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    margin: 0px !important;
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Working hours display styles */
+  .working-hours {
+    margin-top: 20px;
+  }
+  
+  .working-hours p {
+    margin-bottom: 5px;
+  }
+  
+  /* Overtime display styles */
+  .overtime {
+    color: #ff0000;
+  }
+  /* styles.css */
+  
+  /* Calendar styles */
+  /* .react-calendar {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Add border to calendar */
+    /* border-radius: 4px; Add border radius to calendar */
+  /* } */
+   */
+  .react-calendar__tile {
+    color: #000; /* Set text color for enabled dates */
+  }
+  
+  /* .react-calendar__tile--active {
+    background-color: #007bff;
+    color: #fff;
+  } */
+  
+  .react-calendar__month-view__days__day--weekend {
+    color: red;
+  }
+  .react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 50%;
+    width: 64.03%;
+
+}
+  

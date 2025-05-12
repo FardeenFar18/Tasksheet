@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./frontend
+    volumes:
+      - ./frontend/node_modules:/app/node_modules
+      - ./frontend:/app
+    environment:
+      - REACT_APP_HTTP_TYP=http
+      - REACT_APP_HTTP_CONDN=false
+      - REACT_APP_HOST_NAME_3001=tss1:3001
+      - REACT_APP_HOST_NAME_3002=tss2:3002
+    ports:
+      - "3000:3000"
+    networks:
+      - mynetwork
+    hostname: tss0
+  
+  postgres_server:
+    build:
+      dockerfile: Dockerfile.dev
+      context: "./backend/postgres_server"
+    volumes:
+      - /app/node_modules
+      - ./backend/postgres_server:/app
+      - postgresLog:/postgresLog
+    environment:
+      - PGUSER=postgres
+      - PGHOST=postdbcon.123legal.in
+      - PGDATABASE=tasksheet
+      - PGPASSWORD=SWRlZWxpdEAyMDI0
+      - PGPORT=5434
+      - HTTP_TYP=http
+      - PORT=3001
+    ports:
+      - "3001:3001"
+    networks:
+      - mynetwork
+    hostname: tss1
+
+  mongo_server:
+    build:
+      dockerfile: Dockerfile.dev
+      context: "./backend/mongo_server"
+    volumes:
+      - /app/node_modules
+      - ./backend/mongo_server:/app
+      - mongodbLog:/mongodbLog
+    environment:
+      - MONGOHOST=95.111.251.165
+      - MONGODBNAME=my_db
+      - MONGOAUTHSOURCE=admin
+      - MONGOUSER=root
+      - MONGOPASS=hate_123
+      - HTTP_TYP=http
+      - PORT=3002
+    ports:
+      - "3002:3002"
+    networks:
+      - mynetwork
+    hostname: tss2
+   
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  postgresLog:
+  mongodbLog:

@@ -1,0 +1,27 @@
+/* Styles for the button */
+.leave th,
+.leave td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+button {
+    background-color: #070707; /* Blue color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+/* Styles for the button on hover */
+button:hover {
+    background-color: #353333; /* Darker blue color */
+}
+
+/* Styles for the button when active (e.g., clicked) */
+button:active {
+    background-color: #070707; /* Even darker blue color */
+}

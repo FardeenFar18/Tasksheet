@@ -1,0 +1,43 @@
+.user-details-container {
+  max-height: 300px; /* Adjust the height of the container */
+  /* overflow-y: auto; Keep the scrolling behavior */
+  margin: 0; /* Reset both margin and padding */
+  padding: 0;
+}
+
+.user-details-heading {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.user-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.user-details-table th,
+.user-details-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.h3-table th,
+.h3-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.user-details-table th {
+  background-color: #f2f2f2;
+}
+
+.user-details-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.user-details-table tbody tr:hover {
+  background-color: #ddd;
+}

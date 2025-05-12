@@ -1,0 +1,90 @@
+/* PermissionPage.css */
+
+.permission-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid gray;
+}
+
+.permission-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.permission-container label {
+  margin-right: 10px;
+}
+
+.permission-container .period-buttons {
+  margin-top: 10px;
+}
+
+.permission-container button {
+  margin-right: 10px;
+}
+
+.permission-container input[type="number"],
+.permission-container textarea {
+  width: 50px;
+  margin-right: 5px;
+}
+
+.permission-container select {
+  margin-right: 5px;
+}
+
+.permission-container .description-container {
+  margin-top: 20px;
+}
+
+.permission-container .description-container label {
+  display: block;
+}
+
+.permission-container .description-container textarea {
+  width: 50%;
+  height: 50px;
+  margin-left: 230px;
+}
+
+.permission-container .submit-button {
+  margin-top: 20px;
+}
+
+/* .permission-container .button-submit {
+  margin-left: 10%;
+} */
+/* Define custom button colors */
+.permission-container .button-morning,
+.permission-container .button-afternoon,
+.permission-container .button-submit {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 15%;
+}
+
+.permission-container .button-morning:hover,
+.permission-container .button-afternoon:hover,
+.permission-container .button-submit:hover {
+  background-color: #555; /* Dark grey */
+}
+.date1-sentence {
+  text-align: left; /* Align date sentence to left */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  margin-left: 230px; /* Move date slightly to the right */
+}
+
+.description1-sentence {
+  text-align: left; /* Align date sentence to left */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  margin-left: 230px; /* Move date slightly to the right */
+}

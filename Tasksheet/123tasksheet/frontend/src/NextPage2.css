@@ -1,0 +1,48 @@
+/* styles.css */
+
+.dashboard-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10%;
+    /* background-color: #f4f4f4; */
+}
+
+.dashboard-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dashboard-buttons {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute space between buttons */
+}
+
+
+.dashboard-buttons button {
+    padding: 10px 10px;
+    margin-right: 5px; /* Adjust margin-right to reduce space between buttons */
+    background-color: #030303;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dashboard-buttons button:last-child {
+    margin-right: 0; /* Remove margin-right from the last button */
+}
+
+.dashboard-buttons button:hover {
+    background-color: #515457;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    margin-bottom: 9px;
+}
+
+.logout-button:hover {
+    background-color: #bd2130;
+}
